@@ -1,0 +1,26 @@
+{
+  "name": "cge-example",
+  "version": "1.0.0",
+  "description": "An example game for console-game-engine module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akif9748/cge-example.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Akif9748",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Akif9748/cge-example/issues"
+  },
+  "homepage": "https://github.com/Akif9748/cge-example#readme",
+  "dependencies": {
+    "console-game-engine": "^1.0.4",
+    "keypress": "^0.2.1"
+  }
+}
