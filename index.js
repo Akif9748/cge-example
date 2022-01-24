@@ -13,12 +13,15 @@ const pos = [1, 1], character = "Z";
 //First render:
 game.set(pos[0], pos[1], character);
 
+//Count of key presses:
+var moves = 0;
 
 //On keypress:
 process.stdin.on('keypress', (ch, key) => {
     //For exit:
     if (ch === "c") {
         game.clear();
+        console.log("Game finished with", moves, "moves.");
         process.exit(0);
 
         //Look for only keys:
@@ -51,6 +54,7 @@ process.stdin.on('keypress', (ch, key) => {
 
         //SET and RENDER:
         game.set(pos[0], pos[1], "Z");
+        moves++;
     }
 
 });
