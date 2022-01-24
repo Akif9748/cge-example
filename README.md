@@ -1,5 +1,5 @@
 # Console Game Engine Example
-An example game for (`console-game-engine`)[https://github.com/Akif9748/node-console-game-engine] module
+An example game for [`console-game-engine`](https://github.com/Akif9748/node-console-game-engine) module
 
 ### Installing:
 
