@@ -49,7 +49,7 @@ process.stdin.on('keypress', (ch, key) => {
                 break;
 
             default:
-                break;
+                return;
         }
 
         //SET and RENDER:
