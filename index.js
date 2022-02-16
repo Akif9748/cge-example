@@ -8,7 +8,7 @@ process.stdin.setRawMode(true);
 //New console game!
 const game = new ConsoleGame();
 //Config of game
-const pos = [1, 1], character = "Z";
+const pos = [0, 0], character = " ";
 
 //First render:
 game.set(pos[0], pos[1], character);
@@ -33,27 +33,28 @@ process.stdin.on('keypress', (ch, key) => {
         //Change pos:
         switch (key.name) {
             case "left":
-                if (pos[0] > 1) pos[0] -= 1;
+                if (pos[0] > 0) pos[0] -= 1;
                 break;
 
             case "right":
-                if (pos[0] < game.x) pos[0] += 1;
+                if (pos[0] < game.x - 1) pos[0] += 1;
                 break;
 
             case "up":
-                if (pos[1] > 1) pos[1] -= 1;
+                if (pos[1] > 0) pos[1] -= 1;
                 break;
 
             case "down":
-                if (pos[1] < game.y) pos[1] += 1;
+                if (pos[1] < game.y - 1) pos[1] += 1;
                 break;
 
             default:
                 return;
+
         }
 
         //SET and RENDER:
-        game.set(pos[0], pos[1], "Z");
+        game.set(pos[0], pos[1], character);
         moves++;
     }
 
