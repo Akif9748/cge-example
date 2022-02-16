@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Akif9748/cge-example#readme",
   "dependencies": {
-    "console-game-engine": "^1.0.4",
+    "console-game-engine": "^1.1.0",
     "keypress": "^0.2.1"
   }
 }
